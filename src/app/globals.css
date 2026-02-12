@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #0066FF;
+  --color-secondary: #FF9900;
+  --color-background-light: #F8FAFC;
+  --color-background-dark: #0F172A;
+}
+
+:root {
+  --background: #F8FAFC;
+  --foreground: #0F172A;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0F172A;
+    --foreground: #F8FAFC;
+  }
+}
+
+.hero-gradient {
+  background: linear-gradient(135deg, #00C2FF 0%, #0066FF 50%, #0047FF 100%);
+}
+
+.glass-nav {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.software-card {
+  background: rgba(15, 23, 42, 0.8);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+.section-curve {
+  position: relative;
+  background: #fff;
+}
+
+.section-curve::before {
+  content: '';
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: white;
+  clip-path: ellipse(60% 100% at 50% 100%);
+}
+
+/* Legal content styles from Screen 1 */
+.legal-content h2 { margin-top: 2.5rem; margin-bottom: 1rem; font-size: 1.5rem; font-weight: 700; color: #111827; }
+.legal-content h3 { margin-top: 1.5rem; margin-bottom: 0.75rem; font-size: 1.125rem; font-weight: 600; color: #374151; }
+.legal-content p { margin-bottom: 1rem; line-height: 1.75; color: #4b5563; }
+.legal-content ul { margin-bottom: 1rem; list-style-type: disc; padding-left: 1.5rem; color: #4b5563; }
+.legal-content li { margin-bottom: 0.5rem; }
+
+.dark .legal-content h2 { color: white; }
+.dark .legal-content h3 { color: #e5e7eb; }
+.dark .legal-content p { color: #9ca3af; }
+.dark .legal-content ul { color: #9ca3af; }
