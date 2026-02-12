@@ -324,7 +324,7 @@ export default function Home() {
           <p className="text-sm">© 2024 Super GPT AI. All rights reserved.</p>
           <div className="flex space-x-6">
             <Link className="hover:text-white transition-colors" href="/privacy">隐私协议</Link>
-            <Link className="hover:text-white transition-colors" href="/privacy#terms-of-service">服务条款</Link>
+            <Link className="hover:text-white transition-colors" href="/terms">服务条款</Link>
           </div>
         </div>
       </footer>
