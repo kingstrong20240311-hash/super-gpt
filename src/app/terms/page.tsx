@@ -1,4 +1,5 @@
 import Link from "next/link";
+import MaterialIcon from "@/components/MaterialIcon";
 
 export default function TermsPage() {
   return (
@@ -8,7 +9,7 @@ export default function TermsPage() {
           <div className="flex justify-between h-16 items-center">
             <Link href="/" className="flex items-center gap-2">
               <div className="w-8 h-8 bg-primary rounded flex items-center justify-center">
-                <span className="material-icons text-white text-xl">bolt</span>
+                <MaterialIcon name="bolt" className="text-white text-xl" />
               </div>
               <span className="text-xl font-bold tracking-tight text-slate-900 dark:text-white">Super GPT</span>
             </Link>
@@ -24,11 +25,11 @@ export default function TermsPage() {
                 <h4 className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-4">法律文件</h4>
                 <nav className="space-y-1">
                   <Link className="group flex items-center px-3 py-2 text-sm font-medium rounded-lg text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800" href="/privacy">
-                    <span className="material-icons text-sm mr-2">security</span>
+                    <MaterialIcon name="security" className="text-sm mr-2" />
                     隐私政策
                   </Link>
                   <Link className="group flex items-center px-3 py-2 text-sm font-medium rounded-lg bg-primary/10 text-primary" href="/terms">
-                    <span className="material-icons text-sm mr-2">gavel</span>
+                    <MaterialIcon name="gavel" className="text-sm mr-2" />
                     服务条款
                   </Link>
                 </nav>
@@ -53,8 +54,8 @@ export default function TermsPage() {
               <h1 className="text-3xl md:text-4xl font-extrabold text-slate-900 dark:text-white mb-4">服务条款</h1>
               <p className="text-slate-500 dark:text-slate-400 mb-6">欢迎使用 Super GPT。请在访问或使用我们的服务之前，仔细阅读以下服务条款。</p>
               <div className="flex flex-wrap items-center gap-4 text-sm text-slate-500">
-                <span className="flex items-center gap-1"><span className="material-icons text-xs">update</span> 生效日期：2023年11月15日</span>
-                <span className="flex items-center gap-1"><span className="material-icons text-xs">history</span> 版本号：3.1.0</span>
+                <span className="flex items-center gap-1"><MaterialIcon name="update" className="text-xs" /> 生效日期：2023年11月15日</span>
+                <span className="flex items-center gap-1"><MaterialIcon name="history" className="text-xs" /> 版本号：3.1.0</span>
               </div>
             </div>
 
@@ -133,7 +134,7 @@ export default function TermsPage() {
       </main>
 
       <a className="fixed bottom-8 right-8 w-12 h-12 bg-white dark:bg-slate-800 shadow-xl rounded-full flex items-center justify-center border border-slate-200 dark:border-slate-700 hover:border-primary group transition-all" href="#">
-        <span className="material-icons text-slate-400 group-hover:text-primary transition-colors">arrow_upward</span>
+        <MaterialIcon name="arrow_upward" className="text-slate-400 group-hover:text-primary transition-colors" />
       </a>
     </div>
   );
