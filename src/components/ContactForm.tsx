@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import MaterialIcon from "@/components/MaterialIcon";
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
@@ -69,7 +70,7 @@ export default function ContactForm() {
         className="bg-primary hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-bold transition-all shadow-lg shadow-blue-200 dark:shadow-none inline-flex items-center space-x-2"
       >
         <span>{status === "loading" ? "发送中..." : "发送消息"}</span>
-        <span className="material-symbols-outlined text-sm">send</span>
+        <MaterialIcon name="send" className="text-sm" />
       </button>
       {status === "success" && <p className="text-green-500 mt-2">消息已成功发送！</p>}
       {status === "error" && <p className="text-red-500 mt-2">发送失败，请稍后重试。</p>}

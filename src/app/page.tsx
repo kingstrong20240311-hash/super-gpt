@@ -1,5 +1,6 @@
 import Link from "next/link";
 import ContactForm from "@/components/ContactForm";
+import MaterialIcon from "@/components/MaterialIcon";
 
 export default function Home() {
   return (
@@ -9,9 +10,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
           <div className="flex items-center space-x-2">
             <div className="w-10 h-10 bg-white rounded-lg flex items-center justify-center">
-              <span className="material-symbols-outlined text-primary text-2xl">
-                auto_awesome
-              </span>
+              <MaterialIcon name="auto_awesome" className="text-primary text-2xl" />
             </div>
             <span className="text-white text-2xl font-extrabold tracking-tight">
               Super <span className="text-blue-200">GPT</span>
@@ -99,18 +98,14 @@ export default function Home() {
               <div className="flex items-center justify-between mb-8 px-2">
                 <div className="flex items-center space-x-3">
                   <div className="w-8 h-8 bg-blue-500 rounded flex items-center justify-center">
-                    <span className="material-symbols-outlined text-white text-sm">
-                      auto_awesome
-                    </span>
+                    <MaterialIcon name="auto_awesome" className="text-white text-sm" />
                   </div>
                   <span className="text-white font-semibold text-sm">
                     AI-Chat GPT Dashboard
                   </span>
                 </div>
                 <div className="flex space-x-4">
-                  <span className="material-symbols-outlined text-gray-400 text-sm cursor-pointer hover:text-white">
-                    notifications
-                  </span>
+                  <MaterialIcon name="notifications" className="text-gray-400 text-sm cursor-pointer hover:text-white" />
                   <div className="flex space-x-1 ml-4">
                     <div className="w-3 h-3 rounded-full bg-red-500"></div>
                     <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
@@ -121,21 +116,15 @@ export default function Home() {
               <div className="flex gap-6">
                 <div className="w-32 flex flex-col space-y-4">
                   <div className="bg-blue-600/20 text-blue-400 p-2 rounded-lg flex items-center space-x-2 text-xs">
-                    <span className="material-symbols-outlined text-sm">
-                      grid_view
-                    </span>
+                    <MaterialIcon name="grid_view" className="text-sm" />
                     <span>应用中心</span>
                   </div>
                   <div className="text-gray-400 p-2 rounded-lg flex items-center space-x-2 text-xs">
-                    <span className="material-symbols-outlined text-sm">
-                      settings
-                    </span>
+                    <MaterialIcon name="settings" className="text-sm" />
                     <span>设置</span>
                   </div>
                   <div className="text-gray-400 p-2 rounded-lg flex items-center space-x-2 text-xs">
-                    <span className="material-symbols-outlined text-sm">
-                      person
-                    </span>
+                    <MaterialIcon name="person" className="text-sm" />
                     <span>个人中心</span>
                   </div>
                 </div>
@@ -201,72 +190,54 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="p-8 rounded-3xl bg-slate-50 dark:bg-slate-800/50 border border-slate-100 dark:border-slate-700 transition-all hover:shadow-xl">
               <div className="w-14 h-14 bg-blue-100 dark:bg-blue-900/30 rounded-2xl flex items-center justify-center text-primary mb-6">
-                <span className="material-symbols-outlined text-3xl">
-                  translate
-                </span>
+                <MaterialIcon name="translate" className="text-3xl" />
               </div>
               <h3 className="text-xl font-bold mb-4 text-slate-900 dark:text-white">
                 实时多语种翻译
               </h3>
               <ul className="space-y-3">
                 <li className="flex items-start space-x-3 text-slate-600 dark:text-slate-400">
-                  <span className="material-symbols-outlined text-primary text-xl">
-                    check_circle
-                  </span>
+                  <MaterialIcon name="check_circle" className="text-primary text-xl" />
                   <span>支持 100+ 语种即时互译</span>
                 </li>
                 <li className="flex items-start space-x-3 text-slate-600 dark:text-slate-400">
-                  <span className="material-symbols-outlined text-primary text-xl">
-                    check_circle
-                  </span>
+                  <MaterialIcon name="check_circle" className="text-primary text-xl" />
                   <span>精准捕捉语境，地道表达</span>
                 </li>
               </ul>
             </div>
             <div className="p-8 rounded-3xl bg-slate-50 dark:bg-slate-800/50 border border-slate-100 dark:border-slate-700 transition-all hover:shadow-xl">
               <div className="w-14 h-14 bg-orange-100 dark:bg-orange-900/30 rounded-2xl flex items-center justify-center text-secondary mb-6">
-                <span className="material-symbols-outlined text-3xl">
-                  forum
-                </span>
+                <MaterialIcon name="forum" className="text-3xl" />
               </div>
               <h3 className="text-xl font-bold mb-4 text-slate-900 dark:text-white">
                 智能社交助手
               </h3>
               <ul className="space-y-3">
                 <li className="flex items-start space-x-3 text-slate-600 dark:text-slate-400">
-                  <span className="material-symbols-outlined text-primary text-xl">
-                    check_circle
-                  </span>
+                  <MaterialIcon name="check_circle" className="text-primary text-xl" />
                   <span>深度集成全球热门社交软件</span>
                 </li>
                 <li className="flex items-start space-x-3 text-slate-600 dark:text-slate-400">
-                  <span className="material-symbols-outlined text-primary text-xl">
-                    check_circle
-                  </span>
+                  <MaterialIcon name="check_circle" className="text-primary text-xl" />
                   <span>消息自动提醒与快速回复</span>
                 </li>
               </ul>
             </div>
             <div className="p-8 rounded-3xl bg-slate-50 dark:bg-slate-800/50 border border-slate-100 dark:border-slate-700 transition-all hover:shadow-xl">
               <div className="w-14 h-14 bg-green-100 dark:bg-green-900/30 rounded-2xl flex items-center justify-center text-green-600 mb-6">
-                <span className="material-symbols-outlined text-3xl">
-                  psychology
-                </span>
+                <MaterialIcon name="psychology" className="text-3xl" />
               </div>
               <h3 className="text-xl font-bold mb-4 text-slate-900 dark:text-white">
                 AI 写作增强
               </h3>
               <ul className="space-y-3">
                 <li className="flex items-start space-x-3 text-slate-600 dark:text-slate-400">
-                  <span className="material-symbols-outlined text-primary text-xl">
-                    check_circle
-                  </span>
+                  <MaterialIcon name="check_circle" className="text-primary text-xl" />
                   <span>文案润色与拼写纠错</span>
                 </li>
                 <li className="flex items-start space-x-3 text-slate-600 dark:text-slate-400">
-                  <span className="material-symbols-outlined text-primary text-xl">
-                    check_circle
-                  </span>
+                  <MaterialIcon name="check_circle" className="text-primary text-xl" />
                   <span>一键生成专业商务邮件</span>
                 </li>
               </ul>
@@ -310,9 +281,10 @@ export default function Home() {
                 className="relative flex flex-col items-center text-center group"
               >
                 <div className="w-24 h-24 bg-white dark:bg-slate-800 rounded-full shadow-lg flex items-center justify-center mb-6 border-4 border-blue-50 dark:border-slate-700 z-10 group-hover:scale-110 transition-transform">
-                  <span className="material-symbols-outlined text-primary text-4xl">
-                    {step.icon}
-                  </span>
+                  <MaterialIcon
+                    name={step.icon as "cloud_download" | "vpn_key" | "rocket_launch"}
+                    className="text-primary text-4xl"
+                  />
                 </div>
                 <h3 className="text-xl font-bold mb-2 dark:text-white">
                   {step.title}
@@ -369,9 +341,7 @@ export default function Home() {
               </div>
               <ul className="space-y-4 mb-10 flex-grow">
                 <li className="flex items-center space-x-3 text-slate-600 dark:text-slate-300">
-                  <span className="material-symbols-outlined text-primary">
-                    check
-                  </span>
+                  <MaterialIcon name="check" className="text-primary" />
                   <span>解锁全部基础翻译功能</span>
                 </li>
               </ul>
@@ -413,9 +383,7 @@ export default function Home() {
               </div>
               <ul className="space-y-4 mb-10 flex-grow">
                 <li className="flex items-center space-x-3 text-slate-600 dark:text-slate-300 font-bold">
-                  <span className="material-symbols-outlined text-primary">
-                    verified
-                  </span>
+                  <MaterialIcon name="verified" className="text-primary" />
                   <span>高优先级 AI 响应通道</span>
                 </li>
               </ul>
@@ -455,9 +423,7 @@ export default function Home() {
                 <div className="space-y-6">
                   <div className="flex items-start space-x-4">
                     <div className="w-12 h-12 bg-blue-50 dark:bg-blue-900/30 rounded-xl flex items-center justify-center text-primary flex-shrink-0">
-                      <span className="material-symbols-outlined">
-                        location_on
-                      </span>
+                      <MaterialIcon name="location_on" />
                     </div>
                     <div>
                       <h4 className="font-bold text-slate-900 dark:text-white">
@@ -470,9 +436,7 @@ export default function Home() {
                   </div>
                   <div className="flex items-start space-x-4">
                     <div className="w-12 h-12 bg-blue-50 dark:bg-blue-900/30 rounded-xl flex items-center justify-center text-primary flex-shrink-0">
-                      <span className="material-symbols-outlined">
-                        schedule
-                      </span>
+                      <MaterialIcon name="schedule" />
                     </div>
                     <div>
                       <h4 className="font-bold text-slate-900 dark:text-white">
@@ -485,9 +449,7 @@ export default function Home() {
                   </div>
                   <div className="flex items-start space-x-4">
                     <div className="w-12 h-12 bg-blue-50 dark:bg-blue-900/30 rounded-xl flex items-center justify-center text-primary flex-shrink-0">
-                      <span className="material-symbols-outlined">
-                        contact_support
-                      </span>
+                      <MaterialIcon name="contact_support" />
                     </div>
                     <div>
                       <h4 className="font-bold text-slate-900 dark:text-white">
@@ -513,9 +475,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
           <div className="flex items-center space-x-2">
             <div className="w-8 h-8 bg-primary rounded flex items-center justify-center">
-              <span className="material-symbols-outlined text-white text-sm">
-                auto_awesome
-              </span>
+              <MaterialIcon name="auto_awesome" className="text-white text-sm" />
             </div>
             <span className="text-white text-xl font-bold">Super GPT</span>
           </div>

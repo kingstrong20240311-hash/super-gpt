@@ -1,4 +1,5 @@
 import Link from "next/link";
+import MaterialIcon from "@/components/MaterialIcon";
 
 export default function PrivacyPage() {
   return (
@@ -8,7 +9,7 @@ export default function PrivacyPage() {
           <div className="flex justify-between h-16 items-center">
             <Link href="/" className="flex items-center gap-2">
               <div className="w-8 h-8 bg-primary rounded flex items-center justify-center">
-                <span className="material-icons text-white text-xl">bolt</span>
+                <MaterialIcon name="bolt" className="text-white text-xl" />
               </div>
               <span className="text-xl font-bold tracking-tight text-slate-900 dark:text-white">Super GPT</span>
             </Link>
@@ -24,11 +25,11 @@ export default function PrivacyPage() {
                 <h4 className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-4">法律文档</h4>
                 <nav className="space-y-1">
                   <Link className="group flex items-center px-3 py-2 text-sm font-medium rounded-lg bg-primary/10 text-primary" href="/privacy">
-                    <span className="material-icons text-sm mr-2">security</span>
+                    <MaterialIcon name="security" className="text-sm mr-2" />
                     隐私政策
                   </Link>
                   <Link className="group flex items-center px-3 py-2 text-sm font-medium rounded-lg text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800" href="/terms">
-                    <span className="material-icons text-sm mr-2">gavel</span>
+                    <MaterialIcon name="gavel" className="text-sm mr-2" />
                     服务条款
                   </Link>
                 </nav>
@@ -51,8 +52,8 @@ export default function PrivacyPage() {
             <div className="mb-10 pb-10 border-b border-slate-100 dark:border-slate-800" id="privacy-policy">
               <h1 className="text-3xl md:text-4xl font-extrabold text-slate-900 dark:text-white mb-4">隐私政策</h1>
               <div className="flex flex-wrap items-center gap-4 text-sm text-slate-500">
-                <span className="flex items-center gap-1"><span className="material-icons text-xs">update</span> 最后更新日期：2023年10月24日</span>
-                <span className="flex items-center gap-1"><span className="material-icons text-xs">history</span> 版本号：2.4.0</span>
+                <span className="flex items-center gap-1"><MaterialIcon name="update" className="text-xs" /> 最后更新日期：2023年10月24日</span>
+                <span className="flex items-center gap-1"><MaterialIcon name="history" className="text-xs" /> 版本号：2.4.0</span>
               </div>
             </div>
 
@@ -128,7 +129,7 @@ export default function PrivacyPage() {
       </main>
 
       <a className="fixed bottom-8 right-8 w-12 h-12 bg-white dark:bg-slate-800 shadow-xl rounded-full flex items-center justify-center border border-slate-200 dark:border-slate-700 hover:border-primary group transition-all" href="#">
-        <span className="material-icons text-slate-400 group-hover:text-primary transition-colors">arrow_upward</span>
+        <MaterialIcon name="arrow_upward" className="text-slate-400 group-hover:text-primary transition-colors" />
       </a>
     </div>
   );
