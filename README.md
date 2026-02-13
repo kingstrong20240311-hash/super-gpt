@@ -20,6 +20,33 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+## Auth.js Secret (`AUTH_SECRET`)
+
+This project uses Auth.js (NextAuth v5). You must provide a secret in environment variables, otherwise middleware/auth routes can fail with `MissingSecret`.
+
+1. Create a local env file:
+
+```bash
+cp .env.example .env.local
+```
+
+2. Generate a secure secret and set `AUTH_SECRET`:
+
+```bash
+openssl rand -base64 32
+```
+
+Then put the generated value into `.env.local`:
+
+```bash
+AUTH_SECRET=your-generated-secret
+```
+
+Notes:
+- Preferred variable name is `AUTH_SECRET`.
+- `NEXTAUTH_SECRET` is also accepted as fallback for compatibility.
+- In production, always set a real secret in deployment environment variables.
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:

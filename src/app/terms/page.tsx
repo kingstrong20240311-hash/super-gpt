@@ -12,12 +12,6 @@ export default function TermsPage() {
               </div>
               <span className="text-xl font-bold tracking-tight text-slate-900 dark:text-white">Super GPT</span>
             </Link>
-            <nav className="hidden md:flex space-x-8 items-center">
-              <Link className="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary" href="#">产品</Link>
-              <Link className="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary" href="#">价格</Link>
-              <Link className="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary" href="#">企业版</Link>
-              <Link href="/login" className="bg-primary text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-blue-600 transition-colors">登录</Link>
-            </nav>
           </div>
         </div>
       </header>
@@ -50,13 +44,6 @@ export default function TermsPage() {
                   <a className="block pl-4 py-1 text-sm text-slate-500 hover:text-primary border-l-2 border-transparent -ml-[2px] hover:border-primary" href="#termination">6. 协议终止</a>
                   <a className="block pl-4 py-1 text-sm text-slate-500 hover:text-primary border-l-2 border-transparent -ml-[2px] hover:border-primary" href="#disclaimer">7. 免责声明</a>
                 </nav>
-              </div>
-              <div className="p-4 bg-primary/5 rounded-xl border border-primary/10">
-                <p className="text-xs text-slate-500 dark:text-slate-400 mb-3">需要存档版本？</p>
-                <button className="flex items-center justify-center gap-2 w-full py-2 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg text-sm font-medium hover:shadow-sm transition-all text-slate-700 dark:text-slate-200">
-                  <span className="material-icons text-sm">download</span>
-                  下载 PDF (中文)
-                </button>
               </div>
             </div>
           </aside>
@@ -140,48 +127,11 @@ export default function TermsPage() {
                 </ul>
               </section>
 
-              <section className="mt-16 pt-10 border-t border-slate-100 dark:border-slate-800" id="contact">
-                <h2 className="dark:text-white">联系与咨询</h2>
-                <p>如果您对本服务条款有任何疑问，请通过以下方式联系我们的法律事务部门：</p>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-6">
-                  <div className="p-5 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-800/50">
-                    <span className="material-icons text-primary mb-2">email</span>
-                    <p className="font-semibold text-slate-900 dark:text-white mb-1">合规部门邮箱</p>
-                    <p className="text-sm text-slate-500">tos-review@supergpt.ai</p>
-                  </div>
-                  <div className="p-5 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-800/50">
-                    <span className="material-icons text-primary mb-2">support_agent</span>
-                    <p className="font-semibold text-slate-900 dark:text-white mb-1">在线帮助中心</p>
-                    <p className="text-sm text-slate-500">help.supergpt.ai</p>
-                  </div>
-                </div>
-              </section>
             </div>
           </article>
         </div>
       </main>
 
-      <footer className="bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-8">
-            <Link href="/" className="flex items-center gap-2">
-              <div className="w-6 h-6 bg-primary rounded flex items-center justify-center">
-                <span className="material-icons text-white text-xs">bolt</span>
-              </div>
-              <span className="text-lg font-bold tracking-tight text-slate-900 dark:text-white">Super GPT</span>
-            </Link>
-            <div className="flex gap-8">
-              <Link className="text-sm text-slate-500 hover:text-primary transition-colors" href="/privacy">隐私政策</Link>
-              <Link className="text-sm text-slate-500 hover:text-primary transition-colors font-semibold" href="/terms">服务条款</Link>
-              <Link className="text-sm text-slate-500 hover:text-primary transition-colors" href="#">Cookie 政策</Link>
-              <Link className="text-sm text-slate-500 hover:text-primary transition-colors" href="#">数据安全</Link>
-            </div>
-            <div className="text-sm text-slate-400">
-              © 2023 Super GPT Inc. 保留所有权利。
-            </div>
-          </div>
-        </div>
-      </footer>
       <a className="fixed bottom-8 right-8 w-12 h-12 bg-white dark:bg-slate-800 shadow-xl rounded-full flex items-center justify-center border border-slate-200 dark:border-slate-700 hover:border-primary group transition-all" href="#">
         <span className="material-icons text-slate-400 group-hover:text-primary transition-colors">arrow_upward</span>
       </a>
